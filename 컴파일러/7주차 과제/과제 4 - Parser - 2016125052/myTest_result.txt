@@ -1,0 +1,68 @@
+int main(): 
+  Declarations: 
+    Declaration: 
+      Type: int
+      Variable: a
+    Declaration: 
+      Type: int
+      Variable: b
+    Declaration: 
+      Type: int
+      Variable: temp
+  Statements: 
+    =
+      Variable: a
+      Value: 
+        Literal: 2
+    =
+      Variable: b
+      Value: 
+        Literal: 4
+    If: 
+      Condition: 
+        >
+          Identifier: a
+          Identifier: b
+      Then: 
+        Statements: 
+          =
+            Variable: temp
+            Value: 
+              Identifier: a
+          =
+            Variable: a
+            Value: 
+              Identifier: b
+          =
+            Variable: b
+            Value: 
+              Identifier: temp
+    =
+      Variable: temp
+      Value: 
+        Literal: 0
+    While: 
+      Condition: 
+        <=
+          Identifier: a
+          Identifier: b
+      Then: 
+        Statements: 
+          =
+            Variable: a
+            Value: 
+              +
+                Identifier: a
+                Literal: 1
+          =
+            Variable: b
+            Value: 
+              -
+                Identifier: b
+                Literal: 1
+          =
+            Variable: temp
+            Value: 
+              +
+                Identifier: temp
+                Literal: 1

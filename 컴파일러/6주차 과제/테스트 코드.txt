@@ -1,0 +1,9 @@
+int a23, c;
+float b57;
+//comment
+a23=23;b57=5.7;
+if(b57<6)
+{
+	c	=    a23 +   b57;
+}
+

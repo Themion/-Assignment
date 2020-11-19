@@ -1,0 +1,17 @@
+int main() {
+    int a, b, temp;
+    a = 2; b = 4;
+    if(a > b) {
+        temp = a;
+        a = b;
+        b = temp;
+    }
+
+    temp = 0;
+
+    while(a <= b) {
+        a = a + 1;
+        b = b - 1;
+        temp = temp + 1;
+    }
+}

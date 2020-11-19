@@ -1,0 +1,57 @@
+int main(): 
+  Declarations: 
+    Declaration: 
+      Type: char
+      Variable: c
+    Declaration: 
+      Type: int
+      Variable: i
+    Declaration: 
+      Type: int
+      Variable: even
+  Statements: 
+    =
+      Variable: i
+      Value: 
+        Literal: 0
+    =
+      Variable: even
+      Value: 
+        Literal: 0
+    While: 
+      Condition: 
+        <
+          Identifier: i
+          Literal: 10
+      Then: 
+        Statements: 
+          =
+            Variable: i
+            Value: 
+              +
+                Identifier: i
+                Literal: 1
+          If: 
+            Condition: 
+              ==
+                Identifier: i
+                *
+                  Paren: 
+                    /
+                      Identifier: i
+                      Literal: 2
+                  Literal: 2
+            Then: 
+              Statements: 
+                =
+                  Variable: even
+                  Value: 
+                    +
+                      Identifier: even
+                      Literal: 1
+    =
+      Variable: i
+      Value: 
+        +
+          Identifier: even
+          Literal: 23
